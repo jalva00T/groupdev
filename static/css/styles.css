@@ -1,0 +1,503 @@
+/************
+    COMMON
+************/
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: auto;
+    padding: 0;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+/************
+    HOME
+************/
+
+/* Header */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    flex-wrap: nowrap;
+    padding: 0 2%;
+}
+
+.header-container a {
+    text-decoration: none;
+}
+
+.header-container a:visited {
+    color: black;
+}
+
+.nav-icon i {
+    /* display: none; */
+}
+
+.nav-left-text {
+    font-family: 'Zen Dots';
+    font-weight: lighter;
+    font-size: small;
+    /* margin-left: 2%; */
+    /* background-color: red; */
+}
+
+.nav-right {
+    float: right;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* color: #707070; */
+}
+
+.search-form i {
+    color: white;
+    padding-top: 2%;
+    padding-right: 5px;
+}
+
+::placeholder {
+    color: white;
+}
+
+.search-div {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #707070;
+    border: 2px, black, solid;
+    border-radius: 6px;
+    /* padding: 0 10px;     */
+}
+
+input:focus {
+    outline: none;
+}
+
+.search-input {
+    background-color: #707070;
+    border: 2px solid #707070;
+    border-radius: 6px;
+    font-family: 'avenir';
+    padding-left: 5px;
+}
+
+@font-face {
+    font-family: avenir;
+    src: url("AvenirLTStd-Book.otf");
+}
+
+.nav-right-text {
+    color: #707070;
+    display: flex;
+    white-space: nowrap;
+    /* flex-direction: column; */
+    justify-content: space-around;
+    font-family: 'avenir';
+}
+
+.nav-right-text div {
+    /* padding: 0 24px; */
+}
+
+.nav-right-signin {
+    padding-left: 24px;
+    padding-right: 12px
+}
+
+.nav-right-signup {
+    padding-left: 12px;
+    padding-right: 24px;
+}
+
+.bag {
+    background-color: white;
+    border: none;
+    padding: 0;
+}
+
+/* Background */
+
+div.background-image {
+    height: auto;
+    /* width: 100%; */
+}
+
+.background-image img{
+    height: auto;
+    width: 100%;
+    background-attachment: fixed;
+}
+
+.background-img-text-container {
+    position: absolute;
+    z-index: 1;
+    font-family: 'spartan';
+    /* font-size: 4vw; */
+    padding: 15% 5% 0;
+}
+
+.background-img-text-top {
+    font-weight: bolder;
+    /* font-size: xx-large; */
+    font-size: 3.5vw;
+    padding: 0 0 10px;
+}
+
+.background-img-text-middle {
+    font-weight: bolder;
+    /* font-size: xx-large; */
+    font-size: 3.5vw;
+    padding: 0 0 10px;
+}
+
+.background-img-text-bottom {
+    /* font-weight: bolder; */
+    /* font-size: xx-large; */
+    font-size: 2.5vw;
+}
+
+/* Banner */
+
+.banner {
+    background-color: #707070;
+    /* min-width: 435px; */
+
+}
+
+.banner-top-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.spartan-xtrabold {
+    font-family: 'spartan';
+    font-weight: bolder;
+    color: white;
+    /* margin: 45px 0px 0px 0px; */
+    font-size: 4vw;
+}
+
+.spartan-med {
+    font-family: 'spartan';
+    font-weight: 300;
+    font-size: 4vw;
+    color: white;
+    /* margin-bottom: 50px; */
+}
+
+.banner-btm-text {
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-around; */
+    color: white;
+    font-family: 'spartan';
+    font-weight: lighter;
+}
+
+.banner-btm-text a {
+    color: white;
+    padding: 2% 5%
+    /* margin-bottom: 30px; */
+}
+
+/* Categories */
+
+#categories {
+    padding: 8% 0%;
+}
+
+.categories-container-main {
+    display: flex;
+    justify-content: left;
+    /* padding-top: 8%; */
+}
+
+.categories-text {
+    font-family: 'spartan';
+    font-size: 3vw;
+    padding-left: 107%;
+}
+
+.categories-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-bottom: 100px; */
+    /* width: 400px; */
+    /* padding: 5px; */
+}
+
+.categories-grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 40%;
+    /* padding: 5px; */
+}
+
+.categories-grid-container img {
+    /* background-size: cover; */
+    width: 100%;
+    background-size: contain;
+    padding: 10px;
+}
+
+/* Offers */
+
+.offers-container-main {
+    display: flex;
+    justify-content: left;
+}
+
+.offers-text {
+    font-family: 'spartan';
+    font-size: 3vw;
+    padding-left: 123%;
+}
+
+.offers-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20%;
+    /* width: 400px; */
+}
+
+.offers-grid-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    width: 65%;
+}
+
+.offers-grid-container img {
+    /* background-size: cover; */
+    /* background-color: blue; */
+    width: 100%;
+    height: auto;
+    padding: 10px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: black;
+    color: white;
+    font-family: 'avenir';
+    width: auto;
+    /* height: 200px; */
+    /* min-width: 435px; */
+}
+
+.footer-grid-container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding-left: 4%;
+}
+
+.footer-grid-item {
+    font-weight: 400;
+    /* font-size: 1.5vw; */
+    white-space: nowrap;
+}
+
+.footer-link-grid-container {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    padding-left: 5%;
+}
+
+.footer-link-grid-item {
+    /* font-size: 1vw; */
+    font-size: small;
+}
+
+.item2 {
+    margin: 15px 0px;
+}
+
+.footer-column2-links {
+    /* margin-left: 10px; */
+    font-size: small;
+}
+
+.social-icons {
+    background-color: black;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 2%;
+}
+
+.social-icons img {
+    height: 25px;
+    width: 25px;
+    margin-bottom: 10px;
+}
+
+.facebook {
+    margin-right: 15px;
+}
+
+.border-container-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+.border-container {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 99%;
+}
+
+.header-bottom-border {
+    border-bottom: #707070 solid 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 99%;
+}
+
+.copyright {
+    background-color: black;
+    font-family: 'avenir';
+    color: white;
+    font-size: smaller;
+    padding-left: 1%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/***************
+     SHIRTS
+***************/
+
+.shirts-main-container {
+    display: grid;
+    grid-template-columns: 15% 95%;
+}
+
+.side-nav-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.gender-filter-container {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 5%;
+}
+
+.gender-filter {
+    background-color: #000000;
+    color: #ffffff;
+    padding-left: 10px;
+    padding-right: 5px;
+    font-family: 'spartan';
+    white-space: nowrap;
+    padding-top: 10px;
+}
+
+/* .fas {
+    color: #ffffff;
+} */
+
+.fa-caret-down {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0px 10px 0px 5px;
+}
+
+.category-list {
+    font-family: 'spartan';
+    white-space: nowrap;
+    margin-left: 5%;
+}
+
+.category-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+}
+
+.category-container div {
+    color: #373836;
+}
+
+.dropdown {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.category-item {
+    font-family: 'spartan';
+}
+
+.shirts-container {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.shirts-container-item {
+    font-family: 'spartan';
+}
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+}
+
+.pag-item {
+    border: black 1px solid;
+    padding: 5px;
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    font-family: 'spartan';
+    text-align: center;
+}
+
+/***************
+   THANK YOU
+***************/
+
+.thank-you-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "avenir";
+    /* height: 83vh; */
+}
+
+.thank-you-text-1 {
+    /* font-weight: bold; */
+    font-size: 3vw;
+}
+
+.thank-you-text-2 {
+    font-size: 2vw;
+}
+
+.thank-you-text-3 {
+    font-size: 2vw;
+}
