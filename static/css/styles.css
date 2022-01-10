@@ -45,9 +45,9 @@ body {
     color: black;
 }
 
-.nav-icon i {
-    /* display: none; */
-}
+/* .nav-icon i {
+    display: none;
+} */
 
 .nav-left-text {
     font-family: 'Zen Dots';
@@ -110,9 +110,9 @@ input:focus {
     font-family: 'avenir';
 }
 
-.nav-right-text div {
-    /* padding: 0 24px; */
-}
+/* .nav-right-text div {
+    padding: 0 24px;
+} */
 
 .nav-right-signin {
     padding-left: 24px;
@@ -392,7 +392,7 @@ div.background-image {
 
 .shirts-main-container {
     display: grid;
-    grid-template-columns: 15% 95%;
+    grid-template-columns: 15% 85%;
 }
 
 .side-nav-container {
@@ -409,21 +409,18 @@ div.background-image {
 .gender-filter {
     background-color: #000000;
     color: #ffffff;
-    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+    padding-left: 20px;
     padding-right: 5px;
     font-family: 'spartan';
     white-space: nowrap;
-    padding-top: 10px;
 }
-
-/* .fas {
-    color: #ffffff;
-} */
 
 .fa-caret-down {
     background-color: #000000;
     color: #ffffff;
-    padding: 0px 10px 0px 5px;
+    padding: 12px 20px 0px 20px;
 }
 
 .category-list {
